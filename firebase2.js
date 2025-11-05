@@ -37,7 +37,9 @@ const refEstudiantes = ref(db, "estudiantes");
 
 // 🔹 Escuchamos los cambios en tiempo real en la rama "estudiantes
 // La función onValue se ejecuta cada vez que hay un cambio en los datos de la referencia especificada
-onValue(refEstudiantes, (datos) => {
+onValue(refEstudiantes, (datos) => { // al poner la flecha es como una manrta diferente a una funcion.
+
+    
     console.log(datos)
     //Obtenemos la información de los estudiantes
     let estudiantes = datos.val();
