@@ -62,7 +62,7 @@ btnAgregar.onclick = function () {
     //Creamos una referencia a la ubicación "estudiantes" en la base de datos
     //Y con el dni como clave unica
     //Esto asegura que cada estudiante se almacene bajo su dni
-    let estudiantesRef = ref(db, 'estudiantes/' + inputDni.value);
+    let estudiantesRef = ref(db, 'estudiantes/' + inputDni.value); //si pongo solo 'estudiantes/' se guarda en firebase con otra estructura x eso usamos el inputDni
 
     //Usamos la función "set" para escribir los datos del nuevo estudiante en la base de datos
     //Le indicamos donde almacenar los datos y qué datos almacenar
@@ -71,7 +71,7 @@ btnAgregar.onclick = function () {
     set(estudiantesRef, {
         //Tomamos cada dato desde los inputs del formulario
         nombre: inputNombre.value,
-        apellido: inputApellido.value,
+        apellido: inputApellido.value, //usamos llaves xq es un objeto lo que vamos a realizar
         edad: inputEdad.value,
         nota: inputNota.value
     })

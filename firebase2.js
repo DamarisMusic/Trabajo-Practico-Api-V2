@@ -1,4 +1,4 @@
-//Importamos los modulos necesarios de firebase
+ //Importamos los modulos necesarios de firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
 //Modulos de la base de datos: Cada uno de estos modulos nos permite realizar diferentes operaciones en la base de datos
 //Por ejemplo, "getDatabase" nos permite obtener una instancia de la base de datos, 
